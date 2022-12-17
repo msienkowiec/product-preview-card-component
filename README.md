@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![Screenshot](./screenshot.png)
 
 ### Links
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 ### What I learned
 
-First time using picture tag which helps with resposive design.
+First time using picture tag which, helped with resposive design.
 ```html
 <picture>
         <source srcset="images/image-product-desktop.jpg" media="(min-width: 640px)">
