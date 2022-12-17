@@ -115,7 +115,7 @@ a.product-link button:hover {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-/* media querries */
+
 @media screen and (min-width: 600px) {
     main {
         display: grid;
