@@ -12,8 +12,7 @@ img {
 
 body {
     background-color: hsl(30, 38%, 92%);
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-size: 14px;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,16 +20,17 @@ body {
     min-height: 100vh;
 }
 
-#container {
+main {
+    font-family: "Montserrat", sans-serif;
     max-width: 600px;
     margin: 1.5rem;
 }
 
-#container article:first-child img {
+picture img {
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-#container article:last-child {
+main article {
     background-color: white;
     padding: 2rem;
     border-radius: 0 0 0.5rem 0.5rem;
@@ -79,11 +79,19 @@ li:first-child {
 
 li:last-child {
     color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
     text-decoration: line-through;    
 }
 
-button {
-    background-color: hsl(158, 36%, 37%);
+a.product-link {
+    text-decoration: none;
+}
+
+a.product-link button {
+    background-color: hsl(158, 36%, 37%);    
+    color: white;
+    font-family: "Montserrat"; 
+    font-weight: 700;
     width: 100%;
     border: none;
     border-radius: 0.5rem;
@@ -91,24 +99,15 @@ button {
     padding: 1rem;   
     display: flex;
     justify-content: center;
+    gap: 0.5rem;
 }
 
-button:hover {
+a.product-link button:hover {
     background-color: hsl(158, 36%, 18%);
     cursor: pointer;
 }
 
-button img {
-    margin-right: 0.5rem;
-}
-
-button a {
-    text-decoration: none;
-    color: white;
-    font-family: "Montserrat"; 
-    font-weight: 700;
-}
-
+/* footer */
 .attribution {
     text-align: center; 
 }
@@ -116,20 +115,21 @@ button a {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-
-@media screen and (min-width: 640px) {
-    #container {
+/* media querries */
+@media screen and (min-width: 600px) {
+    main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 1.5rem 0;
     }
     
-    #container article:first-child img {
+    main picture img {
         border-radius: 0.75rem 0 0 0.75rem;
         width: 100%;
         height: 100%;
     }
     
-    #container article:last-child {
+    main article {
         border-radius: 0 0.75rem 0.75rem 0;
         margin-top: 0;
     }
